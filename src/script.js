@@ -1,14 +1,14 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { Timer } from 'three/addons/misc/Timer.js'
-import GUI from 'lil-gui'
+// import GUI from 'lil-gui'
 import { Sky } from 'three/addons/objects/Sky.js'
 
 /**
  * Base
  */
 // Debug
-const gui = new GUI()
+// const gui = new GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -130,8 +130,8 @@ scene.add(floor)
 const house = new THREE.Group()
 scene.add(house)
 
-gui.add(floor.material, 'displacementScale').min(0).max(1).step(0.001).name('floorDisplacementScale')
-gui.add(floor.material, 'displacementBias').min(-1).max(1).step(0.001).name('floorDisplacementBias')
+// gui.add(floor.material, 'displacementScale').min(0).max(1).step(0.001).name('floorDisplacementScale')
+// gui.add(floor.material, 'displacementBias').min(-1).max(1).step(0.001).name('floorDisplacementBias')
 
 /**
  * Ghosts
